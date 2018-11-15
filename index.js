@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 function fetchCurrentWeather(city) {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=london,uk`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}$APPID=${API_KEY}$units=metrics`)
   .then(function(response) {
     return response.json();
   })
@@ -20,7 +20,7 @@ function fetchCurrentWeather(city) {
 }
 
 
-function getWeather(callback) {
+function getWeather(city) {
     var weather = 'http://api.openweathermap.org/data/2.5/forecast?lat=51.5072&lon=0.1275&units=metric';
     $.ajax({
       dataType: "jsonp",
