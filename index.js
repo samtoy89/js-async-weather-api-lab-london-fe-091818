@@ -20,13 +20,15 @@ function fetchCurrentWeather(city) {
 }
 
 
-fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=35&lon=139`)
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
-  });
+function getWeather(callback) {
+    var weather = 'http://api.openweathermap.org/data/2.5/forecast?lat=51.5072&lon=0.1275&units=metric';
+    $.ajax({
+      dataType: "jsonp",
+      url: weather,
+      success: callback
+    });
+}
+
 
 
 function displayCurrentWeather(json) {
