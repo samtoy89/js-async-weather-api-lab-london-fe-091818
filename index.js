@@ -5,7 +5,6 @@ function handleFormSubmit(weather) {
     event.preventDefault();
     console.log('Submitted!');
   }
-  return <button onClick={handleSubmit}>Click me</button>;
 }
 
 
