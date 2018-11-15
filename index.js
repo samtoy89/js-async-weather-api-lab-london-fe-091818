@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 function fetchCurrentWeather(city) {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=london,uk`)
   .then(function(response) {
     return response.json();
   })
