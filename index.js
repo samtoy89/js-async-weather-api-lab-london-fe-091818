@@ -5,6 +5,7 @@ function handleFormSubmit(event) {
   console.log('Submitted!');
 }
 
+document.getElementById{""
 
 
 function fetchCurrentWeather(city) {
