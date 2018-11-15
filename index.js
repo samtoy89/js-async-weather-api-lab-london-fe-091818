@@ -1,9 +1,8 @@
 const API_KEY = "c65ba5ee31c4d247ab9b8e0c314afb04"
 
 function handleFormSubmit(weather) {
-   const handleSubmit = (weather) => {
-    
-    console.log('Submitted!');
+   const handleFormSubmit = (weather) => {
+   console.log('Submitted!');
   }
 }
 
