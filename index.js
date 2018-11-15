@@ -1,8 +1,13 @@
 const API_KEY = "c65ba5ee31c4d247ab9b8e0c314afb04"
 
 function handleFormSubmit(weather) {
-  
-}
+   const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Submitted!');
+  }
+  return <button onClick={handleSubmit}>Click me</button>;
+
+
 
 function fetchCurrentWeather(city) {
   //fetch current weather based on city
