@@ -6,7 +6,7 @@ function handleFormSubmit(weather) {
     console.log('Submitted!');
   }
   return <button onClick={handleSubmit}>Click me</button>;
-
+}
 
 
 function fetchCurrentWeather(city) {
