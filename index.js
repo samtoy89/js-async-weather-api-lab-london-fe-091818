@@ -19,6 +19,16 @@ function fetchCurrentWeather(city) {
   });
 }
 
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=london,uk`)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+}
+
 function displayCurrentWeather(json) {
   //render current weather data to the DOM using provided IDs and json from API
 }
