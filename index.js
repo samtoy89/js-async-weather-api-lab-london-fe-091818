@@ -5,8 +5,7 @@ function handleFormSubmit(event) {
   console.log('Submitted!');
 }
 
-document.getElementById("cityForm")
-.addEventListener("submit", handleFormSubmit)
+document.getElementById("cityForm").addEventListener("submit", handleFormSubmit)
 
 function fetchCurrentWeather(city) {
   //fetch current weather based on city
