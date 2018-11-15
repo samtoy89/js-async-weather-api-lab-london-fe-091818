@@ -20,7 +20,7 @@ function fetchCurrentWeather(city) {
 }
 
 
-fetch(`https://api.openweathermap.org/data/2.5/forecast?`)
+fetch(`https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}`)
   .then(function(response) {
     return response.json();
   })
